@@ -1,11 +1,11 @@
 var licznik = 0;
 var addItem = document.getElementById('addItem');
+var list = document.getElementById('lista');
 	
 addItem.addEventListener('click', function(e) {
   licznik += 1;
-var list = document.getElementById('lista');
 var newElement = document.createElement('li');
-newElement.innerHTML = 'Item ' + licznik;
+newElement.innerText = 'Item ' + licznik;
 list.appendChild(newElement);
 });
 
